@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    android:label="List"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.kotlinroomretrofit.Fragments.HomeFragment"
+        android:label="Users"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_createFragment"
+            app:destination="@id/createFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_noResult"
+            app:destination="@id/noResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.kotlinroomretrofit.Fragments.DetailFragment"
+        android:label="User Detail"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detailFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="currentUser"
+            app:argType="com.example.kotlinroomretrofit.model.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/createFragment"
+        android:name="com.example.kotlinroomretrofit.Fragments.CreateFragment"
+        android:label="Create User"
+        tools:layout="@layout/fragment_create">
+        <action
+            android:id="@+id/action_createFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="AddNewUser"
+            app:argType="com.example.kotlinroomretrofit.model.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/noResult"
+        android:name="com.example.kotlinroomretrofit.Fragments.NoResult"
+        android:label="fragment_no_result"
+        tools:layout="@layout/fragment_no_result" >
+        <action
+            android:id="@+id/action_noResult_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
