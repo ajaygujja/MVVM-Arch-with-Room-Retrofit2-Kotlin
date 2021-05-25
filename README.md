@@ -13,20 +13,50 @@ A sample app that display list of Random User. The purpose of this project to il
 9. Github User API
 10. JetPack Libraries
 
-![Architecture_design_new](/app/src/main/res/mipmap-xxhdpi/Architecture_design_new.png)
+
 
 ## ScreenShots
-<img height="400px" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/list1.png" />
-<img height="400px" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/list2.png" />
-<img height="400px" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/detail.png" />
-<img src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/Create_User.png"  height="400px"/>
-![list1](https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/app/src/main/res/mipmap-xxhdpi/list1.png)
-
+<div align:left;display:inline;>
+<img width="200" height="400" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/list1.png" />
+<img width="200" height="400" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/list2.png" />
+<img width="200" height="400" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/detail.png" />
+<img width="200" height="400" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/Create_User.png" />
+</div>
 
 ## Architecture
-<img alt="MVVM Architecture" height="700px" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/Architecture_design_new.jpg" />
+![Architecture_design_new](/app/src/main/res/mipmap-xxhdpi/Architecture_design_new.png)
 
-![Create_User.png](Screens/Create_User.png)
+## Libraries
+
+### Android Jetpack
+
+* [Lifecycle: Create a UI that automatically responds to lifecycle events.](https://developer.android.com/topic/libraries/architecture/lifecycle)
+
+* [LiveData: Build data objects that notify views when the underlying database changes.](https://developer.android.com/topic/libraries/architecture/livedata)
+
+* [ViewModel: Store UI-related data that isn't destroyed on app rotations. Easily schedule asynchronous tasks for optimal execution.](https://developer.android.com/topic/libraries/architecture/viewmodel)
+
+* [Room: Access your app's SQLite database with in-app objects and compile-time checks.](https://developer.android.com/topic/libraries/architecture/room)
+
+* [Navigation: Handle everything needed for in-app navigation.](https://developer.android.com/topic/libraries/architecture/navigation/)
+
+### Http
+
+* [Retrofit2: Type-safe HTTP client for Android and Java by Square, Inc.](https://github.com/square/retrofit)
+
+
+### Others
+
+* [Glide: An image loading and caching library for Android focused on smooth scrolling](https://github.com/bumptech/glide)
+
+
+## Usage
+
+Fork this repo directly:
+
+```shell
+$ git clone https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin.git
+```
 
 ## Author
 [Ajay Gujja](https://github.com/ajaygujja "Ajay Gujja")
