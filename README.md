@@ -13,14 +13,12 @@ A sample app that display list of Random User. The purpose of this project to il
 9. Github User API
 10. JetPack Libraries
 
-
-
 ## ScreenShots
 <div align:left;display:inline;>
 <img width="200" height="400" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/list1.png" />
 <img width="200" height="400" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/list2.png" />
-<img width="200" height="400" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/detail.png" />
-<img width="200" height="400" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/Create_User.png" />
+<img width="200" height="400" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/app/src/main/res/mipmap-xxhdpi/detail_1.png" />
+<img width="200" height="400" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/Create_User_1.png" />
 </div>
 
 ## Architecture
