@@ -1,6 +1,7 @@
 package com.example.kotlinroomretrofit.Fragments
 
 import android.content.Context
+import android.content.Intent
 import android.net.ConnectivityManager
 import android.net.NetworkInfo
 import android.os.Bundle
@@ -57,19 +58,20 @@ class HomeFragment : Fragment() {
 
         if (checkInternetConnection(requireContext())){
             UserDatabase.getDatabase(requireContext()).userDao().readAllData()
-                .observe(viewLifecycleOwner, Observer { ajay ->
+                .observe(viewLifecycleOwner, { ajay ->
 
                     if (ajay.isEmpty()) {
-                        mUserViewModel.myResponse.observe(viewLifecycleOwner, Observer { response ->
+                        mUserViewModel.myResponse.observe(viewLifecycleOwner, { response ->
                             Log.i("Ajay", "Remote ")
 
                             if (response.isSuccessful) {
                                 response.body().let {
                                     if (it != null) {
                                         adapter.setData(it)
-
+                                        adapter.notifyDataSetChanged()
+                                        mLocalUserViewModel.addData(response)
                                     }
-                                    mLocalUserViewModel.addData(response)
+
                                     Toast.makeText(requireContext(), "From Remote", Toast.LENGTH_SHORT)
                                         .show()
 
@@ -84,6 +86,7 @@ class HomeFragment : Fragment() {
                         Toast.makeText(requireContext(), "From Database", Toast.LENGTH_SHORT).show()
                         Log.i("TAG", "ajay: " + ajay.size)
                         adapter.setData(ajay)
+                        adapter.notifyDataSetChanged()
                     }
 
                 })
@@ -92,8 +95,8 @@ class HomeFragment : Fragment() {
                 .observe(viewLifecycleOwner, Observer { ajay ->
                     if (ajay.isEmpty()) {
                         try {
-                            findNavController().navigate(R.id.action_homeFragment_to_noResult)
-
+//                            findNavController().navigate(R.id.action_homeFragment_to_noResult)
+                            startActivity(Intent(requireContext(),NoResult::class.java))
                             Toast.makeText(requireContext(), "Internet Connection Required", Toast.LENGTH_SHORT).show()
                         } catch (e: Exception) {
                             Log.e("TAG", "onCreateView: ",e )
@@ -102,6 +105,7 @@ class HomeFragment : Fragment() {
 //                        adapter.setData(null)
                     } else {
                         adapter.setData(ajay)
+                        adapter.notifyDataSetChanged()
                     }
                 })
         }
