@@ -13,14 +13,6 @@ A sample app that display list of Random User. The purpose of this project to il
 9. Github User API
 10. JetPack Libraries
 
-## ScreenShots
-<div align:left;display:inline;>
-<img width="200" height="400" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/list1.png" />
-<img width="200" height="400" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/list2.png" />
-<img width="200" height="400" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/app/src/main/res/mipmap-xxhdpi/detail_1.png" />
-<img width="200" height="400" src="https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin/blob/master/Screens/Create_User_1.png" />
-</div>
-
 ## Architecture
 ![Architecture_design_new](/app/src/main/res/mipmap-xxhdpi/Architecture_design_new.png)
 
@@ -61,7 +53,25 @@ $ git clone https://github.com/ajaygujja/MVVM-Arch-with-Room-Retrofit2-Kotlin.gi
 
 
 ## Sources
- 1. [Google's official doc](https://developer.android.com/jetpack/docs/guide)
- 2. [Google's Codelab](https://codelabs.developers.google.com/codelabs/android-training-livedata-viewmodel/#0)
- 2. [Architecture Components Samples](https://github.com/android/architecture-components-samples/tree/88747993139224a4bb6dbe985adf652d557de621)
- 3. [Jose Alcérreca's post at Medium](https://medium.com/androiddevelopers/livedata-beyond-the-viewmodel-reactive-patterns-using-transformations-and-mediatorlivedata-fda520ba00b7)
+1. [Google's official doc](https://developer.android.com/jetpack/docs/guide)
+2. [Google's Codelab](https://codelabs.developers.google.com/codelabs/android-training-livedata-viewmodel/#0)
+3. [Architecture Components Samples](https://github.com/android/architecture-components-samples/tree/88747993139224a4bb6dbe985adf652d557de621)
+4. [Jose Alcérreca's post at Medium](https://medium.com/androiddevelopers/livedata-beyond-the-viewmodel-reactive-patterns-using-transformations-and-mediatorlivedata-fda520ba00b7)
+
+## License
+
+    Apache License
+
+    Copyright (c) 2018 qingmei2
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
